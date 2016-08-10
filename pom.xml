@@ -39,6 +39,7 @@
                         <testFailIgnore>true</testFailIgnore>
 						<projectProperties>
 						</projectProperties>
+						<settingsFile>C:\Users\andrey.masunov\Middleware_CI_Tests\Middleware_CI_Tests\soapui-settings.xml</settingsFile>
                     </configuration>
                     <goals>
                         <goal>test</goal>
