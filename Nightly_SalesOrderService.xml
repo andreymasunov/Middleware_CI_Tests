@@ -43319,7 +43319,7 @@
             <status/>
         </ValidateSalesOrder>
     </Body>
-</Envelope>]]></con:request><con:credentials><con:username>erp.automatedtest</con:username><con:password>Rja&amp;htRRd&amp;=UY</con:password><con:domain>home24</con:domain><con:selectedAuthProfile>NTLM</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:authType>NTLM</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:microsoft-dynamics-schemas/codeunit/Automated_BlackBox_Tests_WS:ValidateSalesOrder"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="1375e4d2-f3cf-4b5e-99eb-824d0d4cb092" name="CarrierStatusProcess"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="192e2db5-8bdb-4873-8f0d-a270cc7d0dff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Request_UpdateSalesOrderLine_CallFromCarrierStatusProcess_positive" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GetHostAddress" id="aa97682f-14ad-4601-9ca8-82d977c38325"><con:settings/><con:config><script>import java.net.InetAddress;
+</Envelope>]]></con:request><con:credentials><con:username>erp.automatedtest</con:username><con:password>Rja&amp;htRRd&amp;=UY</con:password><con:domain>home24</con:domain><con:selectedAuthProfile>NTLM</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:authType>NTLM</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:microsoft-dynamics-schemas/codeunit/Automated_BlackBox_Tests_WS:ValidateSalesOrder"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="1375e4d2-f3cf-4b5e-99eb-824d0d4cb092" name="CarrierStatusProcess"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="192e2db5-8bdb-4873-8f0d-a270cc7d0dff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Request_UpdateSalesOrderLine_CallFromCarrierStatusProcess_positive" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GetHostAddress" id="aa97682f-14ad-4601-9ca8-82d977c38325" disabled="true"><con:settings/><con:config><script>import java.net.InetAddress;
 
 //Get all interfaces
 allMyIps = InetAddress.getAllByName(InetAddress.getLocalHost().getCanonicalHostName())
@@ -43339,10 +43339,10 @@ for ( it in allMyIps){
       <wsa:Action>http://localhost/updateSalesOrderLine</wsa:Action>\r
       <wsa:MessageID>urn:${#TestCase#relatesTo}</wsa:MessageID>\r
       <wsa:ReplyTo>\r
-         <wsa:Address>http://${#Project#Host}:${#Project#Port}/SalesOrderService</wsa:Address>\r
+         <wsa:Address>http://10.10.19.68:8087/SalesOrderService</wsa:Address>\r
       </wsa:ReplyTo>\r
       <wsa:FaultTo>\r
-         <wsa:Address>http://${#Project#Host}:${#Project#Port}/SalesOrderService</wsa:Address>\r
+         <wsa:Address>http://10.10.19.68:8087/SalesOrderService</wsa:Address>\r
       </wsa:FaultTo>\r
    </soapenv:Header>\r
    <soapenv:Body>\r
