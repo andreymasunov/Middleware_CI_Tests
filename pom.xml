@@ -33,7 +33,6 @@
                     <configuration>
                         <projectFile>Nightly_SalesOrderService.xml</projectFile>
                         <outputFolder>target/surefire-reports</outputFolder>
-                        <testSuite>CarrierStatusProcess</testSuite>
                         <junitReport>true</junitReport>
                         <printReport>true</printReport>
                         <testFailIgnore>true</testFailIgnore>
